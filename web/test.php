@@ -331,4 +331,57 @@
 	//imprime 1 | 0 si se ejecuto la insercion
 	echo $status;
 	/**/
+	//--------------------------------------------------------------
+	#$subscripcion = new Subscripcion;
+	/*
+	$datos = $subscripcion->listar($key);
+	print_r($datos);
+	/**/
+	/*
+	//insertar
+	$atr = array(	'titulo' => utf8_decode('BÁSICA'),
+								'detalle' => utf8_decode('BASICA GRATIS'),
+								'precio' => 0,
+								'dias' => 200
+ 							);
+	$status = $subscripcion->agregar($key,$atr);
+	//imprime 1 | 0 si se ejecuto la insercion
+	echo $status;
+	/**/
+	//editar
+	/*
+	$atr = array(	'titulo' => utf8_decode('BÁSICA'),
+								'detalle' => utf8_decode('BASICA GRATIS'),
+								'precio' => 0,
+								'dias' => 200
+							);
+	$id = utf8_decode('1');
+	$status = $subscripcion->editar($key,$id,$atr);
+
+	echo $status;
+	/**/
+	//eliminar
+	/*
+	$id = 1;
+	$status = $subscripcion->eliminar($key,$id);
+	echo $status;
+	/**/
+	//restaurar
+	/*
+	$id = 1;
+	$status = $subscripcion->restaurar($key,$id);
+	echo $status;
+	/**/
+	//papelera
+	/*
+	$datos = $subscripcion->papelera($key);
+	print_r($datos);
+	/**/
+	//--------------------------------------------------------
+	#$tipodireccion = new TipoDireccion;
+	/*
+	$datos = $tipodireccion->listar($key);
+	print_r($datos);
+	/**/
+
 ?>
